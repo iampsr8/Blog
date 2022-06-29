@@ -1,0 +1,13 @@
+<%- include('partials/header') -%>
+
+<h1>Home</h1>
+<p><%= startingContent %></p>
+
+<% posts.forEach(post=>{ %>
+<h1><%= post.title %></h1>
+<p><%= post.content.substring(0,100) + " ..." %>
+    <a href="posts/<%= post.title %> ">Read more</a>
+</p>
+<% }) %> <%-include('partials/footer') -%>
+
+<!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam perferendis, nemo corporis dolorum perspiciatis porro, amet velit delectus earum voluptas officiis, dolore eos? Aspernatur earum assumenda libero laborum obcaecati dolorum. Eum ipsum nulla dignissimos neque? Explicabo nihil officia deserunt ipsam qui temporibus quos facere voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non delectus nostrum libero ipsam veniam illo officia ab possimus, earum repellendus assumenda accusamus veritatis dolorum iure eveniet itaque quasi ducimus sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat natus aspernatur, numquam saepe ad animi, dignissimos fuga odit quos illum sunt ratione amet nobis molestiae temporibus velit sapiente. Voluptate porro, officiis error tempora quis libero autem minus dolorum alias blanditiis ex. Et, sed qui. -->
